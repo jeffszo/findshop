@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "../styles/global.css";
-
-
 import { Poppins } from 'next/font/google'
 
 
@@ -24,7 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html className={poppins.className} lang="pt-br">
-      <body>
+      <head/>
+      <body className={'bg-zinc-950'}>
         {children}
       </body>
     </html>
